@@ -1,0 +1,2 @@
+#KSBL PROJECT - UBER EATS ANALYSIS
+This project has been selected in order to analyze how the restaurant industry in the US works and to gauge how different restaurants and chains have performed in different states in terms of ratings and their respective pricings.
