@@ -10,7 +10,9 @@ that is specific to the menu of the restaurants and its details.
 ## DATA CLEANING
 Data cleaning has been done in two phases in two different files:
 
-1. #### Restaurants
+1. #### Restaurants:
+
+
 
 2. #### Restaurants Menu:
 
@@ -25,4 +27,12 @@ Data cleaning has been done in two phases in two different files:
 
 - The merging part has been automated with functions such that it can be used on different files. On running the code the system asks for either giving the list or exiting. If we input list the system gives us the file that are available and when we choose both the files it loads, merges, cleans and then saves all the files. If we input '0' the code ends with a 'Goodbye' response. 
 
-## DATA VISUALIZATION
+## DATA ANALYSIS AND VISUALIZATION
+
+- For the analysis part after cleaning and merging the two datasets we have analyzed the dataset on three KPIs: Price range, number of outlets and Cities.
+
+![Top 10 restaurant Chains in US by price range](https://drive.google.com/drive/folders/1flxmSubfw8Bq1zBcmaarhaS4vI0M4Aj2)
+
+![Top 10 restaurant Chains in US by # of outlets](https://drive.google.com/drive/folders/1flxmSubfw8Bq1zBcmaarhaS4vI0M4Aj2)
+
+![Top 10 restaurant Chains in US by Cities](https://drive.google.com/drive/folders/1flxmSubfw8Bq1zBcmaarhaS4vI0M4Aj2)
