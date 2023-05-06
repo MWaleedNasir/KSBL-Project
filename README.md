@@ -31,8 +31,8 @@ Data cleaning has been done in two phases in two different files:
 
 - For the analysis part after cleaning and merging the two datasets we have analyzed the dataset on three KPIs: Price range, number of outlets and Cities.
 
-![Top 10 restaurant Chains in US by price range Cheap](C:\Users\User\Documents\KSBL-Project\Data_Visualization_1.png)
+![Top 10 restaurant Chains in US by price range Cheap](https://github.com/MWaleedNasir/KSBL-Project/blob/main/Data_Visualization_1.png)
 
-![Top 10 restaurant Chains in US by # of outlets](C:\Users\User\Documents\KSBL-Project\Data_Visualization_2.png)
+![Top 10 restaurant Chains in US by # of outlets]()
 
-![Top 10 restaurant Chains in US by Cities](C:\Users\User\Documents\KSBL-Project\Data_Visualization_3.png)
+![Top 10 restaurant Chains in US by Cities]()
