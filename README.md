@@ -12,7 +12,10 @@ Data cleaning has been done in two phases in two different files:
 
 1. #### Restaurants:
 
-
+- We have renamed several columns so that they make sense and we can easily merge both the files without any confusion. Example category to super category since both files have columns name categories and have different data.
+- The next step is related to how we figured out that there are null values in the dataset and their locations and then we removed those null values so that there is no discrepancy in the dataset and can be used easily for doing calculations and analysis.
+- Performed extensive data cleaning on the restuarant_name and full_address for irrelevant characters and discrepancies.
+- Created two new columns number_of_new_restaurants and outlet_type which can be used in doing analysis for different KPIs and insights.
 
 2. #### Restaurants Menu:
 
@@ -41,4 +44,4 @@ Data cleaning has been done in two phases in two different files:
 3. Top restaurants in the cities of US based on count of Outlets
 ![Top 10 restaurant Chains in US by Cities](https://github.com/MWaleedNasir/KSBL-Project/blob/main/Data_Visualization_3.png)
 
-- Through the analysis and the charts above you can see that the Ice Cream Shop is the largest chain in the cheap category of price range. Similarly, the Ice Cream shop has the most number of outlets (total of 161) in US in all the cities. Finally we also found out that Washington has the most number of restaurant chains in the US and it is the biggest market for anyone who wants to open anywhere in the US.  
+- Through the analysis and the charts above you can see that the Ice Cream Shop is the largest chain in the cheap category of price range. Similarly, the Ice Cream shop has the greatest number of outlets (total of 161) in US in all the cities. Finally, we also found out that Washington has the greatest number of restaurant chains in the US and it is the biggest market for anyone who wants to open anywhere in the US.  
