@@ -61,6 +61,28 @@ def horizontal_bar_plot_chart(df, xlabel, title):
 
     return plt.show()
 
+def vertical_bar_plot_chart(df, xlabel, title):
+    height = df.values
+    bars = df.index
+    y_pos = np.arange(len(bars))
+
+    fig = plt.figure(figsize=[11,7], frameon=False)
+    ax = fig.gca()
+
+    colors = ["green","blue","magenta","cyan","gray","yellow","purple","violet","orange","red","maroon"]
+    random.shuffle(colors)
+    colors = ["#f9cdac","#f2a49f","#ec7c92","#e65586","#bc438b","#933291","#692398","#551c7b","#41155e","#2d0f41"]
+
+    plt.bar(bars, height, color=colors)
+
+    plt.xlabel(xlabel)
+
+    plt.title(title)
+
+    plt.show()
+    return plt.show()
+
+
 """Main Execution Part of Code"""
 
 if __name__ == "__main__":
@@ -80,18 +102,18 @@ if __name__ == "__main__":
             print("Loading CSV Files........")
             file_name1 = read_csv_file(file_name1)
             file_name2 = read_csv_file(file_name2)
-            time.sleep(2)
+            time.sleep(1)
 
             print("Cleaning Data Files........")
             restaurants_data, restaurant_menu_data = data_cleaning_file(file_name1, file_name2)
-            time.sleep(2)
+            time.sleep(1)
             # print(restaurants_data)
             # print(restaurant_menu_data)
 
             print("Merging Data Files........")
             modified_data_file = merge_file(restaurants_data,restaurant_menu_data,'left','restaurant_id')
             modified_data_file.to_csv('modified_data_file.csv')
-            time.sleep(2)
+            time.sleep(1)
 
             print("File Saved in Local Directory.")
 
@@ -99,6 +121,15 @@ if __name__ == "__main__":
             top10_chains = restaurants_data["restaurant_name"].value_counts()[:10].sort_values(ascending=False)
             horizontal_bar_plot_chart(top10_chains,'Number of outlets in US','Top 10 Restaurant chain in US (by number of outlets)')
             
+            price_range_cheap = restaurants_data[restaurants_data["price_range"] == 'Cheap']
+            top10_chains2 = price_range_cheap["restaurant_name"].value_counts()[:10].sort_values(ascending=False)
+            horizontal_bar_plot_chart(top10_chains2,'Number of outlets in US','Top 10 Restaurant chain in US (by number of outlets & Price Range (Cheap))')
+
+            price_range_list = ['Expensive','Very Expensive']
+            price_range_expensive = restaurants_data[(restaurants_data['price_range'].isin(price_range_list)) & (restaurants_data['city'] != "")]
+            top10_chains3 = price_range_expensive.groupby(['city'])['restaurant_id'].count().sort_values(ascending=False)[:10]
+            vertical_bar_plot_chart(top10_chains2,'Number of outlets in US','Top 10 Restaurant chain in US By Cities')
+
             sys.exit()
 
         elif command_1 == '0':
