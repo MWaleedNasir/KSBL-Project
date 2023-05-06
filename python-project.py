@@ -25,6 +25,44 @@ def read_csv_file(filename):
 
 """Main Execution Part of Code"""
 
+"""
+Functions Data Visualization
+Author: Muhammad Tariq Aijaz & Minhaaj Maqsood
+"""
+
+def horizontal_bar_plot_chart(df, xlabel, title):
+    height = df.values
+    bars = df.index
+    y_pos = np.arange(len(bars))
+
+    fig = plt.figure(figsize=[11,7], frameon=False)
+    ax = fig.gca()
+    ax.spines["top"].set_visible("#424242")
+    ax.spines["right"].set_visible(False)
+    ax.spines["left"].set_color("#424242")
+    ax.spines["bottom"].set_color("#424242")
+
+    #colors = ["green","blue","magenta","cyan","gray","yellow","purple","violet","orange","red","maroon"]
+    #random.shuffle(colors)
+    colors = ["#f9cdac","#f2a49f","#ec7c92","#e65586","#bc438b","#933291","#692398","#551c7b","#41155e","#2d0f41"]
+    plt.barh(y_pos, height, color=colors)
+    
+    plt.xticks(color="#424242")
+
+    plt.yticks(y_pos, bars, color="#424242")
+    plt.xlabel(xlabel)
+    # plt.xlabel("Number of outlets in US")
+
+    for i, v in enumerate(height):
+        ax.text(v+3, i, str(v), color='#424242')
+
+    plt.title(title)
+    # plt.title("Top 10 Restaurant chain in US (by number of outlets)")
+
+    return plt.show()
+
+"""Main Execution Part of Code"""
+
 if __name__ == "__main__":
     running = True;
     while running:
@@ -56,6 +94,11 @@ if __name__ == "__main__":
             time.sleep(2)
 
             print("File Saved in Local Directory.")
+
+            print("Visualizing Data........")
+            top10_chains = restaurants_data["restaurant_name"].value_counts()[:10].sort_values(ascending=False)
+            horizontal_bar_plot_chart(top10_chains,'Number of outlets in US','Top 10 Restaurant chain in US (by number of outlets)')
+            
             sys.exit()
 
         elif command_1 == '0':
