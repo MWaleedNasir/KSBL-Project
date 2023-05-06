@@ -40,3 +40,5 @@ Data cleaning has been done in two phases in two different files:
 
 3. Top restaurants in the cities of US based on count of Outlets
 ![Top 10 restaurant Chains in US by Cities](https://github.com/MWaleedNasir/KSBL-Project/blob/main/Data_Visualization_3.png)
+
+- Through the analysis and the charts above you can see that the Ice Cream Shop is the largest chain in the cheap category of price range. Similarly, the Ice Cream shop has the most number of outlets (total of 161) in US in all the cities. Finally we also found out that Washington has the most number of restaurant chains in the US and it is the biggest market for anyone who wants to open anywhere in the US.  
