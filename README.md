@@ -1,4 +1,4 @@
-# UBER EATS ANALYSIS
+# 🚘 UBER EATS ANALYSIS 🛣️
 
 This project has been selected in order to analyze 
 - How the restaurant, that are patnered with UBER Eats, in the US works. 
