@@ -18,7 +18,7 @@ Following are the steps to run scripts:
 
 ## DATA SETS
 
-+We have two datasets 
+We have two datasets 
 - Restaurants.csv - Details and data from the restaurants 
 - Restaurant-menus.csv - Specific to the menu of the restaurants and its details
 
