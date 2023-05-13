@@ -51,7 +51,7 @@ Example category to super category since both files have columns name categories
 
 ## DATA ANALYSIS AND VISUALIZATION
 
-- For the analysis part after cleaning and merging the two datasets we have analyzed the dataset on three KPIs: 
+For the analysis part after cleaning and merging the two datasets we have analyzed the dataset on three KPIs: 
 
 1. Price Range is Cheap and top 10 are based on count of Outlets
 ![Top 10 restaurant Chains in US by price range Cheap](https://github.com/MWaleedNasir/KSBL-Project/blob/main/Data_Visualization_1.png)
