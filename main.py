@@ -89,19 +89,19 @@ if __name__ == "__main__":
     running = True;
     while running:
         print("*************************************************")
-        print("****WELCOME TO EXPLORATORY ANALYSIS SIMULATOR****")
+        print("****UBER EATS ANALYSIS SIMULATOR****")
         print("*************************************************")
-        print("Following are the commands to execute \n1) Get list of files (Enter list) \n2) Exit (Press 0)")
+        print("Following are the commands to execute \n1) Upload CSV Files (Press 1) \n2) Exit (Press 0)\n")
         command_1 = input("Enter Command: ")
         
-        if command_1 == 'list':
-            print(os.listdir())
-            print("Enter csv file names from above list to load into data frames (Write only file names with space-seperated): ")
-            file_name1, file_name2 = input("").split()
+        if command_1 == '1':
+            # print(os.listdir())
+            # print("Enter csv file names from above list to load into data frames (Write only file names with space-seperated): ")
+            # file_name1, file_name2 = input("").split()
 
             print("Loading CSV Files........")
-            file_name1 = read_csv_file(file_name1)
-            file_name2 = read_csv_file(file_name2)
+            file_name1 = read_csv_file('restaurants')
+            file_name2 = read_csv_file('restaurant-menus')
             time.sleep(1)
 
             print("Cleaning Data Files........")
